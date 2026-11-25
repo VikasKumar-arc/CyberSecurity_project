@@ -1,0 +1,13 @@
+<html>
+<head><title>Cyber Security Dashboard</title></head>
+<body>
+<h1>Network Intrusion Dashboard</h1>
+<h2>Recent Alerts</h2>
+<table border=1>
+<tr><th>ID</th><th>Time</th><th>Source</th><th>Message</th></tr>
+{% for e in events %}
+<tr>{% for x in e %}<td>{{x}}</td>{% endfor %}</tr>
+{% endfor %}
+</table>
+</body>
+</html>
